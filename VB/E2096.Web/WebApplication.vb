@@ -39,10 +39,7 @@ Namespace E2096.Web
             Me.module6 = New DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule()
             Me.HyperLinkPropertyEditorAspNetModule1 = New HyperLinkPropertyEditor.Web.HyperLinkPropertyEditorAspNetModule()
             DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
-            ' 
-            ' module1
-            ' 
-            Me.module1.AdditionalExportedTypes.Add(GetType(DevExpress.Xpo.XPObjectType))
+    
             ' 
             ' E2096AspNetApplication
             ' 
