@@ -37,10 +37,7 @@ namespace E2096.Web {
             this.module6 = new DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule();
             this.HyperLinkPropertyEditorAspNetModule1 = new HyperLinkPropertyEditor.Web.HyperLinkPropertyEditorAspNetModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // module1
-            // 
-            this.module1.AdditionalExportedTypes.Add(typeof(DevExpress.Xpo.XPObjectType));
+        
             // 
             // E2096AspNetApplication
             // 
