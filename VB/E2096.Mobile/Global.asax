@@ -1,1 +1,0 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="E2096.Mobile.Global" Language="vb" %>
