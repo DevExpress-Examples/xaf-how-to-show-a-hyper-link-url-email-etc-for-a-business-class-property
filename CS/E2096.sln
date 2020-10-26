@@ -12,10 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperLinkPropertyEditor.Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperLinkPropertyEditor.Web", "HyperLinkPropertyEditor.Web\HyperLinkPropertyEditor.Web.csproj", "{D7405FE5-4733-4700-8B8D-8BA1F61BB730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperLinkPropertyEditor.Mobile", "HyperLinkPropertyEditor.Mobile\HyperLinkPropertyEditor.Mobile.csproj", "{1987C5BD-A157-4956-A0B1-8536AF0A65B5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2096.Mobile", "E2096.Mobile\E2096.Mobile.csproj", "{920ADD88-8181-492E-B860-89199E8C401E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
