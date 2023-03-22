@@ -2,12 +2,11 @@
 using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
-using DevExpress.Xpo;
-using DevExpress.ExpressApp.Xpo;
-using DevExpress.Persistent.BaseImpl;
+using DevExpress.ExpressApp.EF;
+using DevExpress.Persistent.BaseImpl.EF;
 using E2096.Module;
 
-namespace HyperLinkEditor.Module.DatabaseUpdate;
+namespace HyperLinkEditorEF.Module.DatabaseUpdate;
 
 // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Updating.ModuleUpdater
 public class Updater : ModuleUpdater {
@@ -17,23 +16,19 @@ public class Updater : ModuleUpdater {
     public override void UpdateDatabaseAfterUpdateSchema() {
         base.UpdateDatabaseAfterUpdateSchema();
         //string name = "MyName";
-        //DomainObject1 theObject = ObjectSpace.FirstOrDefault<DomainObject1>(u => u.Name == name);
+        //EntityObject1 theObject = ObjectSpace.FirstOrDefault<EntityObject1>(u => u.Name == name);
         //if(theObject == null) {
-        //    theObject = ObjectSpace.CreateObject<DomainObject1>();
+        //    theObject = ObjectSpace.CreateObject<EntityObject1>();
         //    theObject.Name = name;
         //}
         HyperLinkDemoObject obj1 = ObjectSpace.CreateObject<HyperLinkDemoObject>();
         obj1.Name = "HyperLinkDemoObject1";
         obj1.MailUrl = "support@devexpress.com";
         
-       
-        
-        ObjectSpace.CommitChanges();
+
+        ObjectSpace.CommitChanges(); //Uncomment this line to persist created object(s).
     }
     public override void UpdateDatabaseBeforeUpdateSchema() {
         base.UpdateDatabaseBeforeUpdateSchema();
-        //if(CurrentDBVersion < new Version("1.1.0.0") && CurrentDBVersion > new Version("0.0.0.0")) {
-        //    RenameColumn("DomainObject1Table", "OldColumnName", "NewColumnName");
-        //}
     }
 }

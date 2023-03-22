@@ -1,0 +1,12 @@
+﻿@namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor
+@using Microsoft.AspNetCore.Components.Web
+<a href=@ComponentModel.Value
+   @attributes=@ComponentModel.Attributes
+target="_self"
+>@ComponentModel.Value</a>
+@code {
+    [Parameter]
+    public HyperLinkModel ComponentModel { get; set; }
+    public static RenderFragment Create(HyperLinkModel componentModel) =>
+        @<HyperLinkRenderer ComponentModel=@componentModel />;
+}

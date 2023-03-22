@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="E2096.Module.HyperLinkDemoObject">
+      <OwnMembers>
+        <Member Name="MailUrl" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
+        <Member Name="Url" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="Accordion" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" />
+</Application>
