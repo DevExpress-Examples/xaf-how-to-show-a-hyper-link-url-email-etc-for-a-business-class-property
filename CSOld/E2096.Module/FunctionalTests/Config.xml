@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TestRunTimeLimit="3" >
+	<Applications>
+		<!-- Win -->
+		<Application
+			Name="E2096Win"
+			FileName="[ConfigPath]\..\..\E2096.Win\Bin\EasyTest\E2096.Win.exe"
+			AdapterAssemblyName="DevExpress.ExpressApp.EasyTest.WinAdapter.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+			CommunicationPort="4100"/>
+		<!-- Web -->
+		<Application
+			Name="E2096Web"
+			Url="http://localhost:4030"
+			PhysicalPath="[ConfigPath]\..\..\E2096.Web"
+			AdapterAssemblyName="DevExpress.ExpressApp.EasyTest.WebAdapter.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+	</Applications>
+	<TestDatabases>
+		<Database xsi:type="TestMSSQLDatabase" Server="(local)" Name="E2096" DBName="E2096" />
+	</TestDatabases>
+</Options>
