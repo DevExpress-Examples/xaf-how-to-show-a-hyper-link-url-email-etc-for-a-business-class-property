@@ -3,7 +3,7 @@
   <BOModel>
     <Class Name="E2096.Module.HyperLinkDemoObject">
       <OwnMembers>
-        <Member Name="ReadOnlyUrl" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="MailUrl" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
         <Member Name="Url" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
       </OwnMembers>
     </Class>

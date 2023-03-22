@@ -23,4 +23,9 @@
   <ItemGroup>
     <ProjectReference Include="..\HyperLinkEditor.Module\HyperLinkEditor.Module.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="UnusableNodes.xml">
+      <DependentUpon>Model.xafml</DependentUpon>
+    </None>
+  </ItemGroup>
 </Project>

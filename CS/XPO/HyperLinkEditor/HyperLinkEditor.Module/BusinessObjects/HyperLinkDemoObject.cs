@@ -15,12 +15,12 @@ namespace E2096.Module {
             get { return _Name; }
             set { SetPropertyValue("Name", ref _Name, value); }
         }
-        private string _Url;
-        public string Url {
-            get { return _Url; }
-            set { SetPropertyValue("Url", ref _Url, value); }
+        private string _mailUrl;
+        public string MailUrl {
+            get { return _mailUrl; }
+            set { SetPropertyValue("MailUrl", ref _mailUrl, value); }
         }
-		public string ReadOnlyUrl {
+		public string Url {
 			get { return "www.devexpress.com"; }
 		}
     }

@@ -24,12 +24,10 @@ public class Updater : ModuleUpdater {
         //}
         HyperLinkDemoObject obj1 = ObjectSpace.CreateObject<HyperLinkDemoObject>();
         obj1.Name = "HyperLinkDemoObject1";
-        obj1.Url = "support@devexpress.com";
+        obj1.MailUrl = "support@devexpress.com";
         obj1.Save();
-        HyperLinkDemoObject obj2 = ObjectSpace.CreateObject<HyperLinkDemoObject>();
-        obj2.Name = "HyperLinkDemoObject2";
-        obj2.Url = "www.devexpress.com";
-        obj2.Save();
+       
+        
         ObjectSpace.CommitChanges();
     }
     public override void UpdateDatabaseBeforeUpdateSchema() {

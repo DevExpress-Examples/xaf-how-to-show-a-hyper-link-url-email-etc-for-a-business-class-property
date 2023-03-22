@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="E2096.Module.HyperLinkDemoObject">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="ReadOnlyUrl" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>
