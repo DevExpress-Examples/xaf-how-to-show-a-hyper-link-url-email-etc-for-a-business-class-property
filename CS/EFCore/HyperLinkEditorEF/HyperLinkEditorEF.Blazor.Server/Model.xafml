@@ -3,8 +3,8 @@
   <BOModel>
     <Class Name="E2096.Module.HyperLinkDemoObject">
       <OwnMembers>
-        <Member Name="MailUrl" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
-        <Member Name="Url" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
+        <Member Name="MailUrlView" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
+        <Member Name="UrlView" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
       </OwnMembers>
     </Class>
   </BOModel>

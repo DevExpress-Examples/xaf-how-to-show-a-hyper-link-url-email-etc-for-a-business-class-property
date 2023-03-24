@@ -10,9 +10,11 @@ namespace E2096.Module {
     [DefaultClassOptions]
     [DefaultListViewOptions(true, NewItemRowPosition.None)]
     public class HyperLinkDemoObject : BaseObject {
-    
-        public virtual string Name {            get;set;        }
-        public virtual string MailUrl {            get;set;        }
-		public string Url {			get { return "www.devexpress.com"; }		}
+
+        public virtual string Name { get; set; }
+        public virtual string MailUrl { get; set; }
+        public virtual string Url { get; set; }
+        public string UrlView { get { return Url; } }
+        public string MailUrlView { get { return MailUrl; } }
     }
 }
