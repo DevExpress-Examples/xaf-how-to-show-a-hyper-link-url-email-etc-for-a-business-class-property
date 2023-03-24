@@ -4,7 +4,9 @@
     <Class Name="E2096.Module.HyperLinkDemoObject">
       <OwnMembers>
         <Member Name="MailUrl" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="MailUrlView" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
         <Member Name="Url" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="UrlView" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
       </OwnMembers>
     </Class>
   </BOModel>

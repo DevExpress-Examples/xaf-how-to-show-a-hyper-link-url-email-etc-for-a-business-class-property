@@ -25,6 +25,7 @@ public class Updater : ModuleUpdater {
         HyperLinkDemoObject obj1 = ObjectSpace.CreateObject<HyperLinkDemoObject>();
         obj1.Name = "HyperLinkDemoObject1";
         obj1.MailUrl = "support@devexpress.com";
+        obj1.Url = "www.devexpress.com";
         
        
         
