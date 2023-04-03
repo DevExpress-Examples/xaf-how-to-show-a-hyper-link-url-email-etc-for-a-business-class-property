@@ -17,7 +17,7 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
         }
         public HyperLinkModel ComponentModel { get; }
         public override void SetAllowEdit(bool allowEdit) {
-            ComponentModel.ReadOnly = !allowEdit;
+      
         }
         public override object GetValue() {
             return ComponentModel.Value;
