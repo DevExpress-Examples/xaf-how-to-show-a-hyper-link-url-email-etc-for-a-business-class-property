@@ -4,7 +4,6 @@ using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.EF;
 using DevExpress.Persistent.BaseImpl.EF;
-using E2096.Module;
 
 namespace HyperLinkEditorEF.Module.DatabaseUpdate;
 
