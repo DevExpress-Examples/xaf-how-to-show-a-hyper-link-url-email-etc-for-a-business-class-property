@@ -21,6 +21,11 @@ public class Updater : ModuleUpdater {
         //    theObject = ObjectSpace.CreateObject<EntityObject1>();
         //    theObject.Name = name;
         //}
+        var cnt = ObjectSpace.GetObjectsCount(typeof(HyperLinkDemoObject), null);
+        if(cnt > 0) {
+            return;
+        }
+
         HyperLinkDemoObject obj1 = ObjectSpace.CreateObject<HyperLinkDemoObject>();
         obj1.Name = "HyperLinkDemoObject1";
         obj1.MailUrl = "support@devexpress.com";
