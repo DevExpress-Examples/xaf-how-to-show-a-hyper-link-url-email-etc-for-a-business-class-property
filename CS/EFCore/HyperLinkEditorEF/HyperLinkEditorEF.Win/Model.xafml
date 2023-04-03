@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Logo="ExpressAppLogo">
   <BOModel>
-    <Class Name="E2096.Module.HyperLinkDemoObject">
+    <Class Name="HyperLinkEditorEF.Module.HyperLinkDemoObject">
       <OwnMembers>
         <Member Name="MailUrl" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
         <Member Name="MailUrlView" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
