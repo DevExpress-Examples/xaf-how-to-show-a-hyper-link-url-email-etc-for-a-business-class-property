@@ -13,7 +13,7 @@
 
  This example shows custom [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors) classes for WinForms and Blazor are based on the HyperLinkEdit and [HTML <a> Tag](https://www.w3schools.com/tags/tag_a.asp) that can be used for representing object fields, containing email address, a URL in the UI.
 
-To validate an url, a combined RexEx mask is used in both ListView and DetailView of WinForms and ASP.NET applications. The default regular expression is the following:
+To validate an url, a combined RexEx mask is used. The default regular expression is the following:
 (((http|https|ftp)\://)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})
 
 You can use it as is or modify it per your specific needs. Look for [Regular Expression](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) in MSDN for more information on how to do this.
