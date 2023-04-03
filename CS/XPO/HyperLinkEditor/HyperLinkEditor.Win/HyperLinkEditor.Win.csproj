@@ -29,6 +29,7 @@
   <ItemGroup>
     <PackageReference Include="DevExpress.ExpressApp" Version="22.2.4" />
     <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="22.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation.Win" Version="22.2.4" />
     <PackageReference Include="DevExpress.ExpressApp.Win" Version="22.2.4" />
     <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="22.2.4" />
     <PackageReference Include="DevExpress.Persistent.Base" Version="22.2.4" />

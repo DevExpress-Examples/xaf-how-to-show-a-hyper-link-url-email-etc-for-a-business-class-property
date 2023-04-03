@@ -17,7 +17,8 @@ public class ApplicationBuilder : IDesignTimeApplicationFactory {
         builder.UseApplication<HyperLinkEditorWindowsFormsApplication>();
         builder.Modules
             .Add<HyperLinkEditor.Module.HyperLinkEditorModule>()
-        	.Add<HyperLinkEditorWinModule>();
+        	.Add<HyperLinkEditorWinModule>()
+            .AddValidation();
         builder.ObjectSpaceProviders
             .AddXpo((application, options) => {
                 options.ConnectionString = connectionString;

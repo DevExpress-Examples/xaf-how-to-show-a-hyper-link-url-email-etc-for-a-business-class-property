@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
   <BOModel>
-    <Class Name="E2096.Module.HyperLinkDemoObject">
+    <Class Name="HyperLinkEditor.Module.HyperLinkDemoObject">
       <OwnMembers>
         <Member Name="MailUrlView" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />
         <Member Name="UrlView" PropertyEditorType="HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor.HyperLinkPropertyEditor" />

@@ -5,7 +5,7 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 
-namespace E2096.Module {
+namespace HyperLinkEditor.Module {
     [DefaultClassOptions]
     [DefaultListViewOptions(true, NewItemRowPosition.None)]
     public class HyperLinkDemoObject : BaseObject {

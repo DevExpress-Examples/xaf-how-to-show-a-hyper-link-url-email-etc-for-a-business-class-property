@@ -30,7 +30,8 @@ public class Startup {
             builder.UseApplication<HyperLinkEditorBlazorApplication>();
             builder.Modules
                 .Add<HyperLinkEditor.Module.HyperLinkEditorModule>()
-            	.Add<HyperLinkEditorBlazorModule>();
+            	.Add<HyperLinkEditorBlazorModule>()
+                .AddValidation();
             builder.ObjectSpaceProviders
                 .AddXpo((serviceProvider, options) => {
                     string connectionString = null;
