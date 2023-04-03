@@ -26,6 +26,7 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
             return Regex.IsMatch(url, UrlEmailMask);
         }
         public override void SetValue(object value) {
+            ComponentModel.DisplayValue = value.ToString();
             string url = Convert.ToString(value);
             string result = "";
             if (url.Contains("@") && IsValidUrl(url)) {

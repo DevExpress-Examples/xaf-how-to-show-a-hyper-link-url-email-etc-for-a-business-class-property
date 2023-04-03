@@ -6,6 +6,11 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
             get => GetPropertyValue<string>();
             set => SetPropertyValue(value);
         }
+
+        public string DisplayValue {
+            get => GetPropertyValue<string>();
+            set => SetPropertyValue(value);
+        }
         public bool ReadOnly {
             get => GetPropertyValue<bool>();
             set => SetPropertyValue(value);
