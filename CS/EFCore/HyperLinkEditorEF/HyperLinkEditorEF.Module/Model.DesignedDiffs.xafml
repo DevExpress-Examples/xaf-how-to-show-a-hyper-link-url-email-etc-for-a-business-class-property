@@ -1,5 +1,20 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="HyperLinkEditorEF">
-  <Views>
-  </Views>
+  <BOModel>
+    <Class Name="HyperLinkEditorEF.Module.HyperLinkDemoObject">
+      <OwnMembers>
+        <Member Name="MailUrl" EditMask="(((http|https|ftp)\://)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;amp;amp;%\$#\=~])*)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})" EditMaskType="RegEx" />
+        <Member Name="Url" EditMask="(((http|https|ftp)\://)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;amp;amp;%\$#\=~])*)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})" EditMaskType="RegEx" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleRegularExpression Id="MailUrl" Pattern="(((http|https|ftp)\://)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;amp;amp;%\$#\=~])*)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})" TargetContextIDs="Save" TargetType="HyperLinkEditorEF.Module.HyperLinkDemoObject" TargetPropertyName="MailUrl" IsNewNode="True" />
+      <RuleRegularExpression Id="Url" TargetContextIDs="Save" Pattern="(((http|https|ftp)\://)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;amp;amp;%\$#\=~])*)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})" TargetType="HyperLinkEditorEF.Module.HyperLinkDemoObject" TargetPropertyName="Url" IsNewNode="True" />
+    </Rules>
+  </Validation>
 </Application>

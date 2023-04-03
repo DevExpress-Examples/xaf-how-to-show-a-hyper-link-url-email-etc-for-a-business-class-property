@@ -9,6 +9,7 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
+using DevExpress.DataAccess.Native.MongoDB;
 
 namespace HyperLinkEditorEF.Module;
 
@@ -20,6 +21,7 @@ public sealed class HyperLinkEditorEFModule : ModuleBase {
 		// 
 		RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.SystemModule.SystemModule));
 		RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule));
+        RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.ValidationModule));
     }
     public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
         ModuleUpdater updater = new DatabaseUpdate.Updater(objectSpace, versionFromDB);

@@ -18,7 +18,8 @@ public class ApplicationBuilder : IDesignTimeApplicationFactory {
         builder.UseApplication<HyperLinkEditorEFWindowsFormsApplication>();
         builder.Modules
             .Add<HyperLinkEditorEF.Module.HyperLinkEditorEFModule>()
-        	.Add<HyperLinkEditorEFWinModule>();
+        	.Add<HyperLinkEditorEFWinModule>()
+            .AddValidation();
         builder.ObjectSpaceProviders
             .AddEFCore().WithDbContext<HyperLinkEditorEF.Module.BusinessObjects.HyperLinkEditorEFEFCoreDbContext>((application, options) => {
                 // Uncomment this code to use an in-memory database. This database is recreated each time the server starts. With the in-memory database, you don't need to make a migration when the data model is changed.
