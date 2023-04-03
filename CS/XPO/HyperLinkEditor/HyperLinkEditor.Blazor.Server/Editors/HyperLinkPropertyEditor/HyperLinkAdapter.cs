@@ -13,11 +13,10 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
 
         public HyperLinkAdapter(HyperLinkModel componentModel) {
             ComponentModel = componentModel ?? throw new ArgumentNullException(nameof(componentModel));
-            ComponentModel.ValueChanged += ComponentModel_ValueChanged;
         }
         public HyperLinkModel ComponentModel { get; }
         public override void SetAllowEdit(bool allowEdit) {
-            ComponentModel.ReadOnly = !allowEdit;
+
         }
         public override object GetValue() {
             return ComponentModel.Value;
@@ -26,6 +25,7 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
             return Regex.IsMatch(url, UrlEmailMask);
         }
         public override void SetValue(object value) {
+            ComponentModel.DisplayValue = value.ToString();
             string url = Convert.ToString(value);
             string result = "";
             if (url.Contains("@") && IsValidUrl(url)) {
@@ -38,7 +38,7 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
         protected override RenderFragment CreateComponent() {
             return ComponentModelObserver.Create(ComponentModel, HyperLinkRenderer.Create(ComponentModel));
         }
-        private void ComponentModel_ValueChanged(object sender, EventArgs e) => RaiseValueChanged();
+  
         public override void SetAllowNull(bool allowNull) { /* ...*/ }
         public override void SetDisplayFormat(string displayFormat) { /* ...*/ }
         public override void SetEditMask(string editMask) { /* ...*/ }

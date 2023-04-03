@@ -2,8 +2,7 @@
 @using Microsoft.AspNetCore.Components.Web
 <a href=@ComponentModel.Value
    @attributes=@ComponentModel.Attributes
-target="_self"
->@ComponentModel.Value</a>
+target="_self">@ComponentModel.DisplayValue</a>
 @code {
     [Parameter]
     public HyperLinkModel ComponentModel { get; set; }

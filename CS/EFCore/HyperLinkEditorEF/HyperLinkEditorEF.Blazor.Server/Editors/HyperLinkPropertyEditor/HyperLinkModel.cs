@@ -11,6 +11,6 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
             get => GetPropertyValue<string>();
             set => SetPropertyValue(value);
         }
-        public event EventHandler ValueChanged;
+        
     }
 }

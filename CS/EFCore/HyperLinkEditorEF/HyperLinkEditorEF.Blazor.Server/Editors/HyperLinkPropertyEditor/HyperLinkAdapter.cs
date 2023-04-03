@@ -13,7 +13,6 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
 
         public HyperLinkAdapter(HyperLinkModel componentModel) {
             ComponentModel = componentModel ?? throw new ArgumentNullException(nameof(componentModel));
-            ComponentModel.ValueChanged += ComponentModel_ValueChanged;
         }
         public HyperLinkModel ComponentModel { get; }
         public override void SetAllowEdit(bool allowEdit) {
@@ -39,7 +38,6 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
         protected override RenderFragment CreateComponent() {
             return ComponentModelObserver.Create(ComponentModel, HyperLinkRenderer.Create(ComponentModel));
         }
-        private void ComponentModel_ValueChanged(object sender, EventArgs e) => RaiseValueChanged();
         public override void SetAllowNull(bool allowNull) { /* ...*/ }
         public override void SetDisplayFormat(string displayFormat) { /* ...*/ }
         public override void SetEditMask(string editMask) { /* ...*/ }
