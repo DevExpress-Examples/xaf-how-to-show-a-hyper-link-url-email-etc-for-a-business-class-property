@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo">
+  <BOModel>
+    <Class Name="HyperLinkEditorEF.Module.HyperLinkDemoObject">
+      <OwnMembers>
+        <Member Name="MailUrl" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="MailUrlView" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="Url" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+        <Member Name="UrlView" PropertyEditorType="HyperLinkPropertyEditor.Win.WinHyperLinkStringPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="Accordion" DefaultChildItemsDisplayStyle="List" />
+  <Options UIType="TabbedMDI" FormStyle="Ribbon" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="22.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
