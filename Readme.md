@@ -6,8 +6,10 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [WinHyperLinkStringPropertyEditor.cs](./CS/EFCore/HyperLinkEditor/HyperLinkEditor.Win/Editors/WinHyperLinkStringPropertyEditor.cs) 
-* [BlazorHyperLinkPropertyEditor](./CS/EFCore/HyperLinkEditor/HyperLinkEditor.Blazor.Server/Editors/HyperLinkPropertyEditor) 
+* [WinHyperLinkStringPropertyEditor.cs](./CS/EFCore/HyperLinkEditorEF/HyperLinkEditorEF.Win/Editors
+/WinHyperLinkStringPropertyEditor.cs) 
+* [BlazorHyperLinkPropertyEditor](./CS/EFCore/HyperLinkEditorEF/HyperLinkEditorEF.Blazor.Server/Editors
+/HyperLinkPropertyEditor) 
 <!-- default file list end -->
 # How to show a hyper link (URL, email, etc.) for a business class property
 
