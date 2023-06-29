@@ -35,7 +35,7 @@ public class HyperLinkEditorEFEFCoreDbContext : DbContext {
 	public HyperLinkEditorEFEFCoreDbContext(DbContextOptions<HyperLinkEditorEFEFCoreDbContext> options) : base(options) {
 	}
 	//public DbSet<ModuleInfo> ModulesInfo { get; set; }
-	public DbSet<HyperLinkDemoObject> HyperLinkDemoObject { get; set; }
+	public DbSet<HyperLinkDemoObject> HyperLinkDemoObjects { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) {
         base.OnModelCreating(modelBuilder);
