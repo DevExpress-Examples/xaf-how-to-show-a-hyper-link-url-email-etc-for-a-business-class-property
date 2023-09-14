@@ -14,7 +14,7 @@ namespace HyperLinkEditor.Blazor.Server.Editors.HyperLinkProperyEditor {
         public HyperLinkAdapter(HyperLinkModel componentModel) {
             ComponentModel = componentModel ?? throw new ArgumentNullException(nameof(componentModel));
         }
-        public HyperLinkModel ComponentModel { get; }
+        public override HyperLinkModel ComponentModel { get; }
         public override void SetAllowEdit(bool allowEdit) {
 
         }
