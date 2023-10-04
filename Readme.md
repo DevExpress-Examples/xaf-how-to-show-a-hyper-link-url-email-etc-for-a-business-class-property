@@ -4,7 +4,7 @@
 <!-- default badges end -->
 # XAF - How to show a hyper link (URL, email, etc.) for a business class property
 
- This example shows custom [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors) that provide access to object fields with email address or URL displayed as clickable text.
+ This example shows custom [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors) that provide access to object fields with an email address or URL as clickable text.
 
 To validate a URL, these editors use a combined `RexEx` mask. The default regular expression is:
 
@@ -15,7 +15,7 @@ To validate a URL, these editors use a combined `RexEx` mask. The default regula
 You can use it as is or modify it per your specific needs. Search for [Regular Expression](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) in MSDN for more information on how to do this.
 A double click opens a URL in DetailView of the WinForms project for end-user convenience.
 
-These editors are created for learning purposes only. Feel free to extend them further or create your own editors to meet all your business needs.
+These editors are created for learning purposes only. You can extend them or create your own editors to meet your business needs.
 
 <kbd>![image](https://user-images.githubusercontent.com/14300209/227552053-d0e508b7-832c-4579-934d-2624ca8de589.png)</kbd>
 
