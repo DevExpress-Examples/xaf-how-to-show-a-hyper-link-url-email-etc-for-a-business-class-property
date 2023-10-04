@@ -29,3 +29,8 @@ These editors are created for learning purposes only. Feel free to extend them f
 * [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors)
 * [Customize a Built-in Property Editor (Blazor)](https://docs.devexpress.com/eXpressAppFramework/402188/ui-construction/view-items-and-property-editors/property-editors/customize-a-built-in-property-editor-blazor)
 * [Implement a Property Editor Based on a Custom Component (Blazor)](https://docs.devexpress.com/eXpressAppFramework/402189/ui-construction/view-items-and-property-editors/property-editors/implement-a-property-editor-based-on-custom-components-blazor)
+
+## More Examples
+
+* [How to: Display an Integer Property as an Enumeration](https://github.com/DevExpress-Examples/XAF_how-to-display-an-integer-property-as-an-enumeration-e4925)
+* [How to: Disable Property Editors Based on a Business Rule](https://github.com/DevExpress-Examples/XAF_how-to-disable-property-editors-based-on-a-business-rule-e1672)
