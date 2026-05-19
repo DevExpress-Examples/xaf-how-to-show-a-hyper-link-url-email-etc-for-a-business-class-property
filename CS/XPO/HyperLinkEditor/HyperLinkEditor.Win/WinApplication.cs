@@ -14,7 +14,6 @@ public class HyperLinkEditorWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "HyperLinkEditor";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += HyperLinkEditorWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += HyperLinkEditorWindowsFormsApplication_CustomizeLanguagesList;
     }
